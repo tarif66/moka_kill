@@ -4,6 +4,7 @@ import axios from 'axios';
 export default createStore({
   state: {
     products: [],
+    productsInBag: [],
   },
   mutations: {
     loadProducts(state, products) {

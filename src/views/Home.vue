@@ -1,7 +1,8 @@
 <template>
+    <div class="bg-red-500">Test</div>
     <div class="home">
-      <div class="products">
-  
+      <TeacherCard></TeacherCard>
+      <!-- <div class="products">
         <div 
           v-for="(product, index) in this.products" :key="index" 
           class="product">
@@ -13,17 +14,20 @@
           <p class="price">US$ {{product.price.toFixed(2)}}</p>
           <button>Add to bag</button>
         </div>
-      </div>
+      </div> -->
     </div>
   </template>
   
   <script>
   
+  import TeacherCard from '@/components/ui/TeacherCard.vue'
+  
   export default {
     name: 'HomePage',
+    components: { TeacherCard },
     data() {
-      return {
-      }
+    return {
+    }
     },
     computed: {
       products() {
