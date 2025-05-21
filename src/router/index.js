@@ -12,7 +12,7 @@ const routes = [
     path: '/basket',
     name: 'Basket',
     component: Basket
-  },
+  }
   
 ]
 
